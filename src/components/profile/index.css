@@ -1,0 +1,72 @@
+.mainname{
+    margin-left: 30px;
+}
+.navcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+}
+
+.buttonsection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+}
+.bi{
+    background-color: transparent;
+    border: none;
+}
+.detailscontainer{
+    margin-left: 30px;
+    width: 50%;
+}
+.uipara{
+    color: coral;
+    font-weight: bold;
+
+}
+
+.pr_bu{
+    background-color: coral;
+    border-radius:5px;
+    padding: 10px;
+}
+.li_bu{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 25px;
+
+
+}
+.add_project_container{
+    align-self: center;
+    margin-top: 50px;
+}
+.top_container{
+    display: flex;
+    flex-direction: column;
+}
+.in{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inpu{
+    height: 30px;
+    
+}
+.project_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addbutton{
+    background-color: coral;
+    align-items: flex-end;
+
+}
