@@ -21,7 +21,8 @@ class ProfileContainer extends Component{
         project_details:details,
         image:"",
         project_name:"",
-        description:""
+        description:"",
+        project_link:""
     }
 
     addtheproject=()=>{
@@ -37,6 +38,7 @@ class ProfileContainer extends Component{
             image:"",
             project_name:"",
             description:"",
+            project_link:""
         }
         })
 
@@ -50,12 +52,15 @@ class ProfileContainer extends Component{
         this.setState({image:event.target.value})
 
     }
+    project_link_change=(event)=>{
+        this.setState({project_link:event.target.value})
+    }
 
     projectdescription=(event)=>{
         this.setState({description:event.target.value})
     }
     render(){
-        const {project_details,image,project_name,description}=this.state
+        const {project_details,image,project_name,description,project_link}=this.state
         return(
             <>
             <nav class="navcontainer">
@@ -87,8 +92,7 @@ class ProfileContainer extends Component{
                     <label for="name">Project Name</label><br/>
                     <input id="name" type="text" class="in inpu" value={project_name} onChange={this.projectnamechange}/><br/>
                     <label for="pro">Project Link</label><br/>
-                    <input id="pro" type="text" class="in inpu" /><br/>
-                    
+                    <input id="pro" type="text" class="in inpu" value={project_link} onChange={this.project_link_change}/><br/>
                     <label for="link">Image Link</label><br/>
                     <input id="link" type="text" class="in inpu" value={image} onChange={this.imageurl}/><br/>
                     <label for="description">Description</label><br/>
