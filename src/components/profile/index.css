@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: space-around;
     width: 30%;
+    margin-right: 5px;
 }
 .bi{
     background-color: transparent;
@@ -35,6 +36,7 @@
     background-color: coral;
     border-radius:5px;
     padding: 10px;
+    color: black;
 }
 .li_bu{
     background-color: transparent;

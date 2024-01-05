@@ -7,7 +7,13 @@ import { FaLinkedin } from 'react-icons/fa';
 import { MdMailOutline } from 'react-icons/md';
 
 let details=[
-  
+  {
+        image:"https://img.freepik.com/premium-photo/friends-learning-study-group_23-2149257226.jpg?w=996",
+        project_name:"project Name",
+        description:"I created this personal project in order to show how to create an interfece in figma using a portfolio as an example.",
+        id:v4()
+
+  }
 ]
 
 class ProfileContainer extends Component{
@@ -104,9 +110,9 @@ class ProfileContainer extends Component{
             <section id="contact" class="fici">
             <h1>Contact section</h1>
             <div class="icon_container">
-            <FiInstagram class="icon"/>
-            <FaLinkedin class="icon"/>
-            <MdMailOutline class="icon"/>
+            <a href="/"><FiInstagram class="icon"/></a>
+            <a href="/"><FaLinkedin class="icon"/></a>
+            <a href="/"><MdMailOutline class="icon"/></a>
             </div>
             </section>
             </>
