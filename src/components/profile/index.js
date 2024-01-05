@@ -58,8 +58,7 @@ class ProfileContainer extends Component{
         const {project_details,image,project_name,description}=this.state
         return(
             <>
-            <section id="home" class="top_container">
-                <nav class="navcontainer">
+            <nav class="navcontainer">
                     <h1 class="mainname">
                         vidya sagar
                     </h1>
@@ -69,6 +68,7 @@ class ProfileContainer extends Component{
                         <button class="bi"><a href="#contact">Contact</a></button>
                     </div>
                 </nav>
+            <section id="home" class="top_container">
 
                 <div class="detailscontainer">
                     <p class="uipara">UI/UX DESIGNER</p>
