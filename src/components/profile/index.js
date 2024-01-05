@@ -7,13 +7,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { MdMailOutline } from 'react-icons/md';
 
 let details=[
-  {
-        image:"https://img.freepik.com/premium-photo/friends-learning-study-group_23-2149257226.jpg?w=996",
-        project_name:"project Name",
-        description:"I created this personal project in order to show how to create an interfece in figma using a portfolio as an example.",
-        id:v4()
-
-  }
+  
 ]
 
 class ProfileContainer extends Component{
