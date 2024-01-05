@@ -2,6 +2,9 @@ import { Component } from "react";
 import './index.css'
 import Project from "../project"
 import {v4} from 'uuid'
+import { FiInstagram } from 'react-icons/fi';
+import { FaLinkedin } from 'react-icons/fa';
+import { MdMailOutline } from 'react-icons/md';
 
 let details=[
   
@@ -98,8 +101,13 @@ class ProfileContainer extends Component{
                 }
             
             </section >
-            <section id="contact">
-                
+            <section id="contact" class="fici">
+            <h1>Contact section</h1>
+            <div class="icon_container">
+            <FiInstagram class="icon"/>
+            <FaLinkedin class="icon"/>
+            <MdMailOutline class="icon"/>
+            </div>
             </section>
             </>
     )
