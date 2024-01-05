@@ -55,9 +55,9 @@ class ProfileContainer extends Component{
                         vidya sagar
                     </h1>
                     <div class="buttonsection">
-                        <button class="bi">About</button>
+                        <button class="bi"><a href="#about">About</a></button>
                         <button class="bi"><a href="#project">project</a></button>
-                        <button class="bi">Contact</button>
+                        <button class="bi"><a href="#contact">Contact</a></button>
                     </div>
                 </nav>
 
@@ -66,18 +66,21 @@ class ProfileContainer extends Component{
                     <h1>HELLO, my name <br/>is Vidya Sagar</h1>
                     <p>Short text with details about you, what you <br/> do or your professional career.You can add <br/> More information on the about page.</p>
                     <div class="de_button">
-                        <button class="pr_bu">Projects</button>
+                        <button class="pr_bu"><a href="#project">Projects</a></button>
                         <button class="li_bu">LinkedIn</button>
                     </div>
                 </div>
 
                 <div class="add_project_container">
-                    <h1>
+                    <h1 class="add_project">
                         Add project
                     </h1>
                     <label for="name">Project Name</label><br/>
                     <input id="name" type="text" class="in inpu" value={project_name} onChange={this.projectnamechange}/><br/>
-                    <label for="link">Project Link</label><br/>
+                    <label for="pro">Project Link</label><br/>
+                    <input id="pro" type="text" class="in inpu" /><br/>
+                    
+                    <label for="link">Image Link</label><br/>
                     <input id="link" type="text" class="in inpu" value={image} onChange={this.imageurl}/><br/>
                     <label for="description">Description</label><br/>
                     <textarea id="description" type="text" rows="8" cols="50" class="in" value={description} onChange={this.projectdescription}></textarea><br/>
@@ -95,6 +98,9 @@ class ProfileContainer extends Component{
                 }
             
             </section >
+            <section id="contact">
+                
+            </section>
             </>
     )
     }
